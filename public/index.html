@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <!-- App favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+  <!-- Layout config Js -->
+  <script src="assets/js/layout.js"></script>
+  <!-- StarCode CSS -->
+  <link rel="stylesheet" href="assets/css/starcode2.css" />
+  <!-- message toastr -->
+  <link rel="stylesheet" href="assets/css/toastr.min.css" />
+  <script src="assets/js/toastr_jquery.min.js"></script>
+  <script src="assets/js/toastr.min.js"></script>
+
+
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+
+  <script src='assets/libs/choices.js/public/assets/scripts/choices.min.js'></script>
+  <script src="assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+  <script src="assets/libs/tippy.js/tippy-bundle.umd.min.js"></script>
+  <script src="assets/libs/simplebar/simplebar.min.js"></script>
+  <script src="assets/libs/prismjs/prism.js"></script>
+  <script src="assets/libs/lucide/umd/lucide.js"></script>
+  <script src="assets/js/starcode.bundle.js"></script>
+  <!--apexchart js-->
+  <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+  <!--dashboard ecommerce init js-->
+  <script src="assets/js/pages/dashboards-ecommerce.init.js"></script>
+  <!-- App js -->
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>
